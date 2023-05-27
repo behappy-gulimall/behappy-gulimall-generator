@@ -1,5 +1,6 @@
 package ${package}.${moduleName}.entity;
 
+import java.io.Serial;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
@@ -12,7 +13,7 @@ import lombok.Data;
 
 /**
  * ${comments}
- * 
+ *
  * @author ${author}
  * @email ${email}
  * @date ${datetime}
@@ -20,6 +21,7 @@ import lombok.Data;
 @Data
 @TableName("${tableName}")
 public class ${className}Entity implements Serializable {
+	@Serial
 	private static final long serialVersionUID = 1L;
 
 #foreach ($column in $columns)
